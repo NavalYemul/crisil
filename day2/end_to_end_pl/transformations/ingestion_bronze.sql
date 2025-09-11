@@ -9,3 +9,5 @@ select *, current_date() as ingestion_date from stream read_files("/Volumes/dev/
 
 create streaming table products_pl as 
 select *, current_date() as ingestion_date from stream read_files("/Volumes/dev/default/input_files/products/",format=>"csv");
+
+
